@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Ligas de Europa</title>
+</head>
+
+<body style="background-image: url('https://headtopics.com/images/2019/4/25/marca/todo-lo-que-est-en-juego-en-las-cinco-grandes-ligas-europeas-1121443107843837952.webp');">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="ml-1" style=" background-color: #4CAF50;border-radius: 5px;">
+        <div class="row text-center mt-4">
+            <div class="col">
+                <h1 class="text-white">Ingrese equipos de las 5 ligas de Europa</h1>
+
+            </div>
+        </div>
+
+        <form action="http://localhost:3000/consultar" method="POST">
+            <div class="row mt-4">
+                <div class="col"></div>
+                <div class="col text-center">
+                    <input type="text" class="form-control" style="width: 600px;" name="twit" id="twit">
+                </div>
+                <div class="col"></div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col"></div>
+                <div class="col text-center">
+                    <button class="btn btn-primary" type="submit">Realizar comprobación</button>
+                </div>
+                <div class="col"></div>
+            </div>
+            <br>
+            <br>
+            <% if (resultado ) { %>
+                <h2 class="text-center text-white">
+                    <%= resultado  %>
+                </h2>
+                <% } %>
+
+        </form>
+    </div>
+
+
+</body>
+
+</html>

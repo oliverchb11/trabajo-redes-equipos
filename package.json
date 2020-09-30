@@ -1,0 +1,20 @@
+{
+    "name": "trabajoredes-camilo",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "nodemon src/index.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "brain.js": "^2.0.0-beta.2",
+        "ejs": "^3.1.5",
+        "express": "^4.17.1",
+        "firebase-admin": "^9.2.0",
+        "path": "^0.12.7"
+    }
+}
